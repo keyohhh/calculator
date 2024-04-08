@@ -1,0 +1,141 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(Lato-Light.ttf)
+}
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    border: 8px solid black;
+    background-color: black;
+    height: 625px;
+    width: 320px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 5px;
+}
+
+.display {
+    font-size: 3em;
+    font-family: Lato;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 5px 0 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    height: 58px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 5px;
+    padding-bottom: 100px;
+    
+}
+
+.time {
+    color: white;
+}
+
+.signal {
+    height: 15px;
+}
+
+.default-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 0 5px;
+}
+
+
+
+button {
+    height: 7vh;
+    flex: 1;
+    border-radius: 50px;
+    border: none;
+    font-family: Lato;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.number {
+    background-color: #505050;
+    color: white;
+}
+
+.number:active {
+    background-color: #676666;
+}
+
+.decimal {
+    font-size: 24px;
+}
+
+.operator, .equal {
+    background-color: #FF9500;
+    color: white;
+}
+
+.operator:active, .equal:active {
+    background-color: #ffb650;
+}
+
+.clear, .plus-minus, .percent {
+    background-color: #d4d4d2;
+    color: black;
+}
+
+.clear:active, .plus-minus:active, .percent:active {
+    background-color: #efefee;
+}
+
+.zero-container {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.zero-row {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+    margin: 0 5px;
+}
+
+.zero {
+    background-color: #505050;
+    color: white;
+}
+
+.zero:active {
+    background-color: #676666;
+}
+
+.swipe {
+    margin: 25px auto 0px;
+    border: 3px solid #D4D4D2;
+    width: 125px;
+    text-align: center;
+    border-radius: 5px;
+}
